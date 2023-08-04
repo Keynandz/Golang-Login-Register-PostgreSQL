@@ -19,7 +19,9 @@ Jika PostgreSQL sudah berubah menjadi "sekolah=#". Maka selanjutnya jalankan per
 
 **email VARCHAR(250) NOT NULL,**
 
-**password VARCHAR(250) NOT NULL**
+**password VARCHAR(250) NOT NULL,**
+
+**verif BOOLEAN**
 
 **);**
 
@@ -67,7 +69,9 @@ If PostgreSQL has changed to "sekolah=#". Then next run the command
 
 **email VARCHAR(250) NOT NULL,**
 
-**password VARCHAR(250) NOT NULL**
+**password VARCHAR(250) NOT NULL,**
+
+**verif BOOLEAN**
 
 **);**
 

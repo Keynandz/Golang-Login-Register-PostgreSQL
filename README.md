@@ -51,19 +51,19 @@ Semoga ini dapat membantu dan bermanfaat. Terimakasih
 ### 1. Setup PostgreSQL Database
 Run the command on your PostgreSQL
 
-**create school database;**
+**create database sekolah;**
 
 After that run the command
 
-**\c school;**
+**\c sekolah;**
 
-If PostgreSQL has changed to "school=#". Then next run the command
+If PostgreSQL has changed to "sekolah=#". Then next run the command
 
-**create account table (**
+**create table akun (**
 
 **id SERIAL PRIMARY KEY,**
 
-**name VARCHAR(250) NOT NULL,**
+**nama VARCHAR(250) NOT NULL,**
 
 **email VARCHAR(250) NOT NULL,**
 

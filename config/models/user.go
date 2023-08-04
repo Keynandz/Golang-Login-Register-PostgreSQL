@@ -5,4 +5,5 @@ type User struct {
 	Nama     string `json:"nama"`
 	Email    string `json:"email"`
 	Password string `json:"password"`
+	Verif    bool   `json:"verif"`
 }

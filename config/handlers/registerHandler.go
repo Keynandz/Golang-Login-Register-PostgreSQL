@@ -33,6 +33,7 @@ func CreateAkunWeb(c echo.Context) error {
 		Nama: nama,
 		Password: hashedPassword,
 		Email:    email,
+		Verif:    false,
 	}
 
 	_, err = repositories.CreateAkun(user)

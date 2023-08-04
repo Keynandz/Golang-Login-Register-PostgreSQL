@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #aabcf7, #5875c4, #dde3f5);
+            background-size: 400% 400%;
+            animation: backgroundAnimation 10s infinite;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        div {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #F7FFE5;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #FF6347;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Logout</h2>
+    <div>
+        <p>You have successfully logged out.</p>
+        <form action="/login" method="POST">
+            <input type="submit" value="Login Again">
+        </form>
+    </div>
+</body>
+</html>

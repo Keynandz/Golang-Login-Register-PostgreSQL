@@ -2,7 +2,9 @@
 <html>
 <head>
     <title>Logout</title>
+    <!-- Gaya Tampilan -->
     <style>
+        /* Tampilan untuk elemen body */
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(45deg, #aabcf7, #5875c4, #dde3f5);
@@ -10,6 +12,7 @@
             animation: backgroundAnimation 10s infinite;
         }
 
+        /* Animasi latar belakang */
         @keyframes backgroundAnimation {
             0% {
                 background-position: 0% 50%;
@@ -22,6 +25,7 @@
             }
         }
 
+        /* Tampilan untuk elemen div */
         div {
             width: 400px;
             margin: 0 auto;
@@ -32,12 +36,14 @@
             text-align: center;
         }
 
+        /* Tampilan untuk judul (h2) */
         h2 {
             text-align: center;
             color: #000000;
             font-weight: bold;
         }
 
+        /* Tampilan untuk tombol submit */
         input[type="submit"] {
             padding: 10px;
             background-color: #FF6347;
@@ -49,11 +55,12 @@
     </style>
 </head>
 <body>
+    <!-- Halaman Logout -->
     <h2>Logout</h2>
     <div>
-        <p>You have successfully logged out.</p>
+        <p>Anda telah berhasil keluar.</p>
         <form action="/login" method="POST">
-            <input type="submit" value="Login Again">
+            <input type="submit" value="Login Kembali">
         </form>
     </div>
 </body>

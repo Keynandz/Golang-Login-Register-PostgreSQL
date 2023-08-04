@@ -2,7 +2,9 @@
 <html>
 <head>
     <title>Login</title>
+    <!-- Gaya Tampilan -->
     <style>
+        /* Tampilan untuk elemen body */
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(45deg, #aabcf7, #5875c4, #dde3f5);
@@ -10,6 +12,7 @@
             animation: backgroundAnimation 10s infinite;
         }
 
+        /* Animasi latar belakang */
         @keyframes backgroundAnimation {
             0% {
                 background-position: 0% 50%;
@@ -22,6 +25,7 @@
             }
         }
 
+        /* Tampilan untuk elemen form */
         form {
             width: 400px;
             margin: 0 auto;
@@ -31,22 +35,26 @@
             background-color: #F7FFE5;
         }
 
+        /* Tampilan untuk judul (h2) */
         h2 {
             text-align: center;
             color: #000000;
             font-weight: bold;
         }
 
+        /* Tampilan untuk kelas form-group */
         .form-group {
             margin-bottom: 5px;
         }
 
+        /* Tampilan untuk label */
         label {
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
         }
 
+        /* Tampilan untuk input email dan password */
         input[type="email"],
         input[type="password"] {
             width: 94%;
@@ -55,6 +63,7 @@
             border: 1px solid #ccc;
         }
 
+        /* Tampilan untuk tombol submit */
         input[type="submit"] {
             width: 100%;
             padding: 10px;
@@ -64,6 +73,8 @@
             cursor: pointer;
             border-radius: 3px;
         }
+
+        /* Tampilan untuk paragraf (p) */
         p {
             text-align: center;
             font-size: 14px;
@@ -71,17 +82,20 @@
             margin-top: 10px;
         }
 
+        /* Tampilan untuk tautan di dalam paragraf */
         p a {
             color: #4CAF50;
             text-decoration: none;
         }
 
+        /* Tampilan untuk tautan saat dihover */
         p a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    <!-- Formulir Login -->
     <h2>Login</h2>
     <form action="/login" method="POST">
         <div class="form-group">
@@ -93,7 +107,7 @@
             <input type="password" id="password" name="password" required>
         </div>
         <input type="submit" value="Login">
-        <p>Already have account? <a href="/form">Register Here</a></p>
+        <p>Sudah memiliki akun? <a href="/form">Daftar di sini</a></p>
     </form>
 </body>
 </html>

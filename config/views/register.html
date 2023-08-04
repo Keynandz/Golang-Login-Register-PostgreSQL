@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Registration</title>
+    <title>Registrasi</title>
+    <!-- Gaya Tampilan -->
     <style>
+        /* Tampilan untuk elemen body */
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(45deg, #aabcf7, #5875c4, #dde3f5);
@@ -10,6 +12,7 @@
             animation: backgroundAnimation 10s infinite;
         }
 
+        /* Animasi latar belakang */
         @keyframes backgroundAnimation {
             0% {
                 background-position: 0% 50%;
@@ -22,6 +25,7 @@
             }
         }
 
+        /* Tampilan untuk elemen form */
         form {
             width: 400px;
             margin: 0 auto;
@@ -31,22 +35,26 @@
             background-color: #F7FFE5;
         }
 
+        /* Tampilan untuk judul (h2) */
         h2 {
             text-align: center;
             color: #000000;
             font-weight: bold;
         }
 
+        /* Tampilan untuk kelas form-group */
         .form-group {
             margin-bottom: 5px;
         }
 
+        /* Tampilan untuk label */
         label {
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
         }
 
+        /* Tampilan untuk input dan select */
         input[type="password"],
         input[type="email"],
         input[type="text"],
@@ -57,6 +65,7 @@
             border: 1px solid #ccc;
         }
 
+        /* Tampilan untuk tombol submit */
         input[type="submit"] {
             width: 100%;
             padding: 10px;
@@ -66,6 +75,8 @@
             cursor: pointer;
             border-radius: 3px;
         }
+
+        /* Tampilan untuk paragraf (p) */
         p {
             text-align: center;
             font-size: 14px;
@@ -73,21 +84,24 @@
             margin-top: 10px;
         }
 
+        /* Tampilan untuk tautan di dalam paragraf */
         p a {
             color: #4CAF50;
             text-decoration: none;
         }
 
+        /* Tampilan untuk tautan saat dihover */
         p a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h2>Registration User</h2>
+    <!-- Formulir Registrasi -->
+    <h2>Registrasi Pengguna</h2>
     <form action="/register" method="POST">
         <div class="form-group">
-            <label for="nama">nama</label>
+            <label for="nama">Nama</label>
             <input type="text" id="nama" name="nama" required>
         </div>
         <div class="form-group">
@@ -95,28 +109,28 @@
             <input type="email" id="email" name="email" required>
         </div>
         <div class="form-group">
-            <label for="password">Password</label>
+            <label for="password">Kata Sandi</label>
             <input type="password" id="password" name="password" required>
         </div>
         <div class="form-group">
-            <label for="confirm_password">Confirm Password</label>
+            <label for="confirm_password">Konfirmasi Kata Sandi</label>
             <input type="password" id="confirm_password" name="confirm_password" required>
         </div>
-        <input type="submit" value="Registration">
-        <p>Already have account? <a href="/login">Login Here</a></p>
+        <input type="submit" value="Registrasi">
+        <p>Sudah memiliki akun? <a href="/login">Login di sini</a></p>
     </form>
 
-
+    <!-- Skrip JavaScript untuk validasi konfirmasi kata sandi -->
     <script>
-        var password = document.getElementById("password")
-        , confirm_password = document.getElementById("confirm_password");
+        var password = document.getElementById("password"),
+            confirm_password = document.getElementById("confirm_password");
 
-        function validatePassword(){
-        if(password.value != confirm_password.value) {
-            confirm_password.setCustomValidity("Passwords Don't Match");
-        } else {
-            confirm_password.setCustomValidity('');
-        }
+        function validatePassword() {
+            if (password.value != confirm_password.value) {
+                confirm_password.setCustomValidity("Kata Sandi Tidak Cocok");
+            } else {
+                confirm_password.setCustomValidity('');
+            }
         }
 
         password.onchange = validatePassword;

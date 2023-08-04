@@ -2,7 +2,9 @@
 <html>
 <head>
     <title>Index</title>
+    <!-- Gaya Tampilan -->
     <style>
+        /* Tampilan untuk elemen body */
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(45deg, #aabcf7, #5875c4, #dde3f5);
@@ -10,6 +12,7 @@
             animation: backgroundAnimation 10s infinite;
         }
 
+        /* Animasi latar belakang */
         @keyframes backgroundAnimation {
             0% {
                 background-position: 0% 50%;
@@ -22,6 +25,7 @@
             }
         }
 
+        /* Tampilan untuk elemen div */
         div {
             width: 400px;
             margin: 0 auto;
@@ -32,12 +36,14 @@
             text-align: center;
         }
 
+        /* Tampilan untuk judul (h2) */
         h2 {
             text-align: center;
             color: #000000;
             font-weight: bold;
         }
 
+        /* Tampilan untuk tombol submit */
         input[type="submit"] {
             padding: 10px;
             background-color: #FF6347;
@@ -49,9 +55,10 @@
     </style>
 </head>
 <body>
-    <h2>Welcome to the Index Page</h2>
+    <!-- Halaman Index -->
+    <h2>Selamat Datang di Halaman Indeks</h2>
     <div>
-        <p>You are logged in!</p>
+        <p>Anda telah berhasil login!</p>
         <form action="/exit" method="GET">
             <input type="submit" value="Logout">
         </form>
